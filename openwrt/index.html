@@ -9,19 +9,19 @@
       
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.4">
     
     
       
-        <title>Joe Huang</title>
+        <title>OpenWrt - Joe Huang</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.db9e7362.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.db9e7362.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
         
       
     
@@ -36,7 +36,7 @@
     
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
     
       
@@ -55,7 +55,7 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
-    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-joes-page" class="md-skip">
+        <a href="#d-link-router-ipv6-specification-v301" class="md-skip">
           Skip to content
         </a>
       
@@ -76,7 +76,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Joe Huang" class="md-header__button md-logo" aria-label="Joe Huang" data-md-component="logo">
+    <a href=".." title="Joe Huang" class="md-header__button md-logo" aria-label="Joe Huang" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to Joe's Page
+              OpenWrt
             
           </span>
         </div>
@@ -163,7 +163,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Joe Huang" class="md-nav__button md-logo" aria-label="Joe Huang" data-md-component="logo">
+    <a href=".." title="Joe Huang" class="md-nav__button md-logo" aria-label="Joe Huang" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -182,7 +182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="resume/" class="md-nav__link">
+      <a href="../resume/" class="md-nav__link">
         Resume
       </a>
     </li>
@@ -195,11 +195,58 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="openwrt/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          OpenWrt
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         OpenWrt
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v301b02" class="md-nav__link">
+    v3.01b02
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v301b01" class="md-nav__link">
+    v3.01b01
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -230,8 +277,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    Introduction
+  <a href="#v301b02" class="md-nav__link">
+    v3.01b02
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v301b01" class="md-nav__link">
+    v3.01b01
   </a>
   
 </li>
@@ -249,11 +303,88 @@
               
                 
                 
-                <h1 id="welcome-to-joes-page">Welcome to Joe's Page</h1>
-<h2 id="introduction">Introduction</h2>
-<ul>
-<li>xxxxxxxxxxxxxxxxx.</li>
-</ul>
+                <h1 id="d-link-router-ipv6-specification-v301">D-Link Router IPv6 Specification v3.01</h1>
+<hr />
+<p><strong>Revision History</strong></p>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Date</th>
+<th><div style="width:3rem">Author</div></th>
+<th>Modification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v3.01b01</td>
+<td>2021/06/18</td>
+<td>Joe Huang</td>
+<td>Support D-Link Router Spec v3.01 on OpenWrt-v21.02.0-rc1</td>
+</tr>
+<tr>
+<td>v3.01b02</td>
+<td>2021/08/19</td>
+<td>Joe Huang</td>
+<td>Support Stable and Opaque IIDs with SLAAC (RFC7217)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="v301b02">v3.01b02</h2>
+<hr />
+<p><strong>Description</strong></p>
+<ol>
+<li>netifd and odhcp6c Support RFC7217</li>
+<li>Enable libopenssl cryptyo for SHA1</li>
+</ol>
+<p><strong>Revision</strong></p>
+<pre><code>22c20981b297c67219eca4a71bea06add204f444
+</code></pre>
+<p><strong>Changed files</strong></p>
+<pre><code>modified:   .config
+modified:   package/network/config/netifd/Makefile
+new file:   package/network/config/netifd/patches/001-rfc7217.patch
+modified:   package/network/ipv6/odhcp6c/Makefile
+modified:   package/network/ipv6/odhcp6c/files/dhcpv6.sh
+new file:   package/network/ipv6/odhcp6c/patches/002-rfc7217.patch
+</code></pre>
+<h2 id="v301b01">v3.01b01</h2>
+<hr />
+<p><strong>Description</strong></p>
+<ol>
+<li>Support RFC6092 (REC1-19, 21-23, 24, 31, 33, 36, 37, 49, 50)</li>
+<li>Support RFC7084 L-14</li>
+<li>Support RFC8585</li>
+<li>Support D-Link IPv4aaS &amp; IPv6 Autodetection</li>
+<li>Extend odhcpd for dhcpv6_start/dhcpv6_end/dhcpv6_reserved</li>
+<li>Modify odhcpd provide PD to follow D-Link method (According to PD length rather than prefix length)</li>
+<li>Support 6RD hub and spoke mode</li>
+<li>Support S46 Priority (RFC8026)</li>
+</ol>
+<p><strong>Revision</strong></p>
+<pre><code>148354fb4490bd343bf0c9efb2e282fb3860da40
+</code></pre>
+<p><strong>Changed files</strong></p>
+<pre><code>modified:   .config
+modified:   package/network/config/firewall/Makefile
+modified:   package/network/config/firewall/files/firewall.config
+new file:   package/network/config/firewall/files/firewall.dynamic
+new file:   package/network/config/firewall/files/firewall.security
+modified:   package/network/config/firewall/files/firewall.user
+modified:   package/network/ipv6/6rd/files/6rd.sh
+new file:   package/network/ipv6/autowan/Makefile
+new file:   package/network/ipv6/autowan/files/auto4.sh
+new file:   package/network/ipv6/autowan/files/auto6.sh
+modified:   package/network/ipv6/odhcp6c/files/dhcpv6.script
+new file:   package/network/ipv6/odhcp6c/patches/001-S46-priority.patch
+new file:   package/network/services/odhcpd/patches/003-dhcpv6-start-end-and-pd-split.patch
+new file:   package/network/utils/iptables/patches/900-extension-CTFILTER.patch
+new file:   target/linux/mediatek/files-5.4/include/linux/netfilter_ipv6/ip6t_CTFILTER.h
+new file:   target/linux/mediatek/files-5.4/net/ipv6/netfilter/ip6t_CTFILTER.c
+modified:   target/linux/mediatek/mt7622/config-5.4
+new file:   target/linux/mediatek/patches-5.4/9001-RFC7084-L-14.patch
+new file:   target/linux/mediatek/patches-5.4/9002-CTFILTER.patch
+</code></pre>
                 
               
               
@@ -269,6 +400,26 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../resume/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Resume" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Resume
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -291,10 +442,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.1e84347e.min.js"></script>
+      <script src="../assets/javascripts/bundle.1e84347e.min.js"></script>
       
     
   </body>
