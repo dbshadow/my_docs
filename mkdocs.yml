@@ -5,5 +5,5 @@ extra_css:
 theme:
     name: material
 nav:
-        - Resume: resume.md
+        - Resume: index.md
         - OpenWrt: openwrt.md
