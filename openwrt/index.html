@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#d-link-router-ipv6-specification-v301" class="md-skip">
+        <a href="#my-router-ipv6-specification-on-openwrt" class="md-skip">
           Skip to content
         </a>
       
@@ -230,6 +230,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v303b01" class="md-nav__link">
+    v3.03b01
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v301b02" class="md-nav__link">
     v3.01b02
   </a>
@@ -277,6 +284,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v303b01" class="md-nav__link">
+    v3.03b01
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v301b02" class="md-nav__link">
     v3.01b02
   </a>
@@ -303,7 +317,7 @@
               
                 
                 
-                <h1 id="d-link-router-ipv6-specification-v301">D-Link Router IPv6 Specification v3.01</h1>
+                <h1 id="my-router-ipv6-specification-on-openwrt">My Router IPv6 Specification on OpenWrt</h1>
 <hr />
 <p><strong>Revision History</strong></p>
 <table>
@@ -320,7 +334,7 @@
 <td>v3.01b01</td>
 <td>2021/06/18</td>
 <td>Joe Huang</td>
-<td>Support D-Link Router Spec v3.01 on OpenWrt-v21.02.0-rc1</td>
+<td>Support My Router Spec v3.01 on OpenWrt-v21.02.0-rc1</td>
 </tr>
 <tr>
 <td>v3.01b02</td>
@@ -328,8 +342,28 @@
 <td>Joe Huang</td>
 <td>Support Stable and Opaque IIDs with SLAAC (RFC7217)</td>
 </tr>
+<tr>
+<td>v3.03b01</td>
+<td>2021/11/12</td>
+<td>Joe Huang</td>
+<td>Support RFC8781 for 464XLAT</td>
+</tr>
 </tbody>
 </table>
+<h2 id="v303b01">v3.03b01</h2>
+<hr />
+<p><strong>Description</strong></p>
+<ol>
+<li>Support RFC8781 for 464XLAT - RA pref64 option(38)</li>
+<li>Priority : PCP(TODO) -&gt; RA pref64 option -&gt; ipv4only.arpa</li>
+</ol>
+<p><strong>Revision</strong></p>
+<pre><code>095ac761a49f58384ad3ef6476c899f4a9715648
+</code></pre>
+<p><strong>Changed files</strong></p>
+<pre><code>    modified:   package/network/ipv6/odhcp6c/files/dhcpv6.script
+    new file:   package/network/ipv6/odhcp6c/patches/003-support-ra-pref64-option.patch
+</code></pre>
 <h2 id="v301b02">v3.01b02</h2>
 <hr />
 <p><strong>Description</strong></p>
@@ -355,9 +389,9 @@ new file:   package/network/ipv6/odhcp6c/patches/002-rfc7217.patch
 <li>Support RFC6092 (REC1-19, 21-23, 24, 31, 33, 36, 37, 49, 50)</li>
 <li>Support RFC7084 L-14</li>
 <li>Support RFC8585</li>
-<li>Support D-Link IPv4aaS &amp; IPv6 Autodetection</li>
+<li>Support IPv4aaS &amp; IPv6 Autodetection</li>
 <li>Extend odhcpd for dhcpv6_start/dhcpv6_end/dhcpv6_reserved</li>
-<li>Modify odhcpd provide PD to follow D-Link method (According to PD length rather than prefix length)</li>
+<li>Modify odhcpd provide PD to follow new method (According to PD length rather than prefix length)</li>
 <li>Support 6RD hub and spoke mode</li>
 <li>Support S46 Priority (RFC8026)</li>
 </ol>
